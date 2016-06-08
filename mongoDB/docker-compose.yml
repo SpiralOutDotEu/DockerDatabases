@@ -1,0 +1,10 @@
+version: "2"
+services:
+  mongo:
+    image: mongo:3.2.4
+    volumes:
+       -  ./mongo/data/db:/data/db
+       -  ./mongo/data/config:/data/configdb
+    ports:
+      - "27017:27017"
+
